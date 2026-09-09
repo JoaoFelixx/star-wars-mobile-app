@@ -1,10 +1,12 @@
-import type { Character } from '@/types/character';
+import type { Character, CharacterAPIResponse } from '@/types/character';
 
 import { api } from './client';
 
 
 export function getCharacters() {
-  return api<Character[]>('/people');
+  const charactersData = api<CharacterAPIResponse>('/people');
+
+  return charactersData;
 }
 
 export function getCharacter(id: string) {

@@ -16,3 +16,8 @@ export interface Character {
   url: string
   vehicles: string[]
 }
+
+export interface CharacterAPIResponse {
+  count: number;
+  results: Character[];
+}
