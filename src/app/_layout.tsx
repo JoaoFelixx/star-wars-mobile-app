@@ -7,15 +7,13 @@ import { useColorScheme } from 'react-native';
 import { AnimatedSplashOverlay } from '@/components/animated-icon';
 import AppTabs from '@/components/app-tabs';
 
-
 SplashScreen.preventAutoHideAsync();
 
 const queryClient = new QueryClient();
 
-
 export default function TabLayout() {
   const colorScheme = useColorScheme();
-  
+
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
@@ -23,5 +21,5 @@ export default function TabLayout() {
         <AppTabs />
       </ThemeProvider>
     </QueryClientProvider>
-  )
+  );
 }

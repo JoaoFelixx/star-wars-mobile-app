@@ -3,7 +3,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Spacing } from '@/constants/theme';
 
-
 export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.safeArea}>
@@ -11,7 +10,6 @@ export default function HomeScreen() {
     </SafeAreaView>
   );
 }
-
 
 const styles = StyleSheet.create({
   safeArea: {
@@ -21,6 +19,6 @@ const styles = StyleSheet.create({
     gap: Spacing.three,
   },
   text: {
-    color: "#ff0000"
-  }
+    color: '#ff0000',
+  },
 });

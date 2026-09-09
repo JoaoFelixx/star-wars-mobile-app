@@ -2,7 +2,6 @@ import type { Character, CharacterAPIResponse } from '@/types/character';
 
 import { api } from './client';
 
-
 export function getCharacters() {
   const charactersData = api<CharacterAPIResponse>('/people');
 
