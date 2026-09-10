@@ -5,7 +5,10 @@ import type { CharacterAPIResponse } from '@/types/character';
 
 import { getCharactersByPagination } from '@/services/api/character';
 
+import { useCharacterImages } from '@/hooks/queries/use-character-images';
 import { useMutateCharacters } from '@/hooks/queries/use-characters';
+
+import { mapCharacter } from '@/util/mapper/map-character';
 
 import { CharacterCard } from './character-card';
 
@@ -19,6 +22,7 @@ interface CharacterListProps {
 
 export const CharacterList = ({ charactersData, isLoading, refetch }: CharacterListProps) => {
   const { mutate } = useMutateCharacters();
+  const { data: characterImages } = useCharacterImages();
   const timerRequestRef = useRef<number>(null);
 
 
@@ -64,7 +68,7 @@ export const CharacterList = ({ charactersData, isLoading, refetch }: CharacterL
       onRefresh={refetch}
       onEndReached={onEndOfScrollGoNextPage}
       contentContainerClassName="px-4 py-4"
-      renderItem={({ item }) => <CharacterCard character={item} />}
+      renderItem={({ item }) => <CharacterCard character={mapCharacter(item, characterImages)} />}
     />
   )
 }
