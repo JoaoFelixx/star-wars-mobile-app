@@ -36,6 +36,21 @@ export default function AppTabs() {
           renderingMode="template"
         />
       </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="starships">
+        <NativeTabs.Trigger.Label>Naves</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="airplane" md="rocket_launch" />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="vehicles">
+        <NativeTabs.Trigger.Label>Veículos</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="car.fill" md="directions_car" />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="more">
+        <NativeTabs.Trigger.Label>Mais</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="ellipsis" md="more_horiz" />
+      </NativeTabs.Trigger>
     </NativeTabs>
   );
 }
