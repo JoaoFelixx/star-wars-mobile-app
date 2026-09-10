@@ -1,56 +1,82 @@
-# Welcome to your Expo app 👋
+<h1 align="center">
+  Star Wars App
+</h1>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  <a href="#participants">Participants</a> •
+  <a href="#techs">Techs</a> •
+  <a href="#features">Features</a> •
+  <a href="#usage">Usage</a>
+</p>
 
-## Get started
+<div align="center">
+  <img src="./assets/readme-files/home.png" width="32%" />
+  <img src="./assets/readme-files/films-tab.png" width="32%" />
+</div>
 
-1. Install dependencies
+## Participants
 
-   ```bash
-   npm install
-   ```
+| [<img src="https://avatars.githubusercontent.com/JoaoFelixx" width="75px;"/>](https://github.com/JoaoFelixx) |
+| :-------------------------------------------------------------------------------------------------------: |
 
-2. Start the app
+| [João Félix](https://github.com/JoaoFelixx) |
+| :-------------------------------------------: |
 
-   ```bash
-   npx expo start
-   ```
+## Techs
 
-In the output, you'll find options to open the app in a
+- [x] React Native
+- [x] Expo (SDK 57) + Expo Router (file-based routing)
+- [x] TypeScript
+- [x] NativeWind (Tailwind CSS for React Native)
+- [x] TanStack React Query
+- [x] React Native Reanimated
+- [x] Expo Native Tabs
+- [x] ESLint + Prettier
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## About
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Star Wars App is a mobile app built with Expo and Expo Router that consumes the [SWAPI](https://swapi.dev/) (Star Wars API) to let you browse the Star Wars universe: films, characters, planets, species, starships and vehicles.
 
-## Get a fresh project
+## Features
 
-When you're ready, run:
+- 🎬 Browse all Star Wars films with posters
+- 🧑‍🚀 Explore characters, including their images
+- 🪐 List planets, species, starships and vehicles
+- ⭐ Highlighted film on the Home screen
+- 🌓 Light/dark theme support
+- 📱 Native tab navigation (Home, Characters, Films, Starships, Vehicles, More)
+
+## How to download the project:
 
 ```bash
-npm run reset-project
+# Clone the repository
+$ git clone https://github.com/JoaoFelixx/star-wars-mobile-app.git
+
+# Enter directory
+$ cd star-wars-mobile-app
+
+# Install dependencies
+$ npm install
+
+# Run project
+$ npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Usage
 
-### Other setup steps
+1. Run `npm install`.<br />
+2. Run `npm start` and choose how to open the app: on an Android emulator, iOS simulator, the web, or via [Expo Go](https://expo.dev/go) by scanning the QR code.<br />
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+Other useful scripts:
 
-## Learn more
+```bash
+$ npm run android   # Run on Android
+$ npm run ios        # Run on iOS
+$ npm run web         # Run on Web
+$ npm run lint        # Lint the project
+$ npm run format      # Format the project with Prettier
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+<br/>
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+<p align="center"> Developed by <a href="https://www.linkedin.com/in/felix-devweb/">João Félix</a> ⚓</p>
